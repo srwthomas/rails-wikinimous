@@ -1,0 +1,15 @@
+<div class="container" >
+  <h1>All Articles</h1>
+  <p>Browse through the library:</p>
+  <ol>
+  <% @articles.each do |article|%>
+    <li> Title: <%=link_to article.title, article_path(article)%>
+    <%= link_to ' [ Delete ]', article_path(article),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+  </ol>
+
+  <button type="button" class="btn btn-outline-primary"><%=link_to 'Add Article', new_path%></button>
+</div>
