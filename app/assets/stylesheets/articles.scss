@@ -3,11 +3,16 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .container {
   margin: 10.625em auto;
-  width: 18.75em;
+  width: 25em;
 
 }
 
 .header_link {
   display: flex;
   justify-content: space-between;
+}
+
+.showbtn:hover{
+  color: blueviolet;
+  background-color: aqua;
 }
