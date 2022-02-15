@@ -3,6 +3,6 @@
 
 10.times do
   Article.create(
-    title: Faker::Lorem.word,
+    title: Faker::City.word,
     content: Faker::Lorem.paragraph)
 end
